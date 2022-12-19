@@ -1,0 +1,800 @@
+ s.q1();
+    s.q2();
+    s.q3();
+    s.q4();
+    s.check();
+
+     closegraph();
+  };
+
+ void quiz::q1()
+ {
+ do
+ { cleardevice();
+   setcolor(15);
+   setbkcolor(4);
+   rectangle( 10,10,maxx-10,maxy-10);
+   settextstyle(4,0 ,4) ;
+   outtextxy(2,10,"      ~ CAREER ASSESSMENT ~");
+   settextstyle(1,0,3);
+   outtextxy(40,80,"  # QUESTION 1");
+   settextstyle(3,0,2);
+   outtextxy(89,120,"  WHAT WOULD PEOPLE DESCRIBE YOU ?");
+   settextstyle(3,0,1);
+   outtextxy(65,165,"* Talkative,Spontaneous and");
+   outtextxy(65,182,"  Outgoing");
+   outtextxy(65,209,"* Like to be in a fast-paced  ");
+   outtextxy(65,229,"  environment ");
+   outtextxy(375,165,"* Reserved,private and");
+   outtextxy(375,182,"  observant");
+   outtextxy(375,209,"* Tend to think things  ");
+   outtextxy(375,229,"  through inside your head ");
+   outtextxy(68,269," Then you prefer, ");
+   outtextxy(117,295," E");
+   outtextxy(80,315,"<..Extrovert..>");
+   outtextxy(375,269," Then you prefer, ");
+   outtextxy(455,295," I");
+   outtextxy(395,315,"<..Introvert..>");
+   outtextxy(245,360,"ENTER YOUR CHOICE: ");
+   gotoxy(55,24);
+   cin>>ch;
+   if(tolower(ch)=='i'|| tolower(ch)=='e')
+   break;
+   else
+   outtextxy(245,380,"WRONG OPTION! CHOOSE AGAIN(I/E)");
+   }while(tolower(ch)!='i'|| tolower(ch)!='e');
+   if(isupper(ch))
+   ch=tolower(ch);
+   m[va++]=ch;
+ }
+ void quiz::q2()
+ { do
+  {
+   cleardevice();
+   setcolor(15);
+   setbkcolor(4);
+   rectangle( 10,10,maxx-10,maxy-10);
+   settextstyle(4,0,4);
+   outtextxy(2,10,"      ~ CAREER ASSESSMENT ~ ");
+   settextstyle(1,0,3);
+   outtextxy(40,80," # QUESTION 2");
+   settextstyle(3,0,2);
+   outtextxy(89,120," HOW DO YOU PREFER TO TAKE IN INFORMATION ?");
+   settextstyle(3,0,1);
+   outtextxy(65,165," * Like to describe things");
+   outtextxy(65,182,"   in a specific,literal way");
+   outtextxy(65,209," * Like to describe things");
+   outtextxy(65,229," in a figurative,poetic way");
+   outtextxy(375,165," * Focus on the reality");
+   outtextxy(375,182,"   how things are");
+   outtextxy(375,209,"* Imagine the possibilities");
+   outtextxy(375,229,"of things could be");
+   outtextxy(68,269,"  Then you prefer,");
+   outtextxy(117,295,"        S        ");
+   outtextxy(80,315,"    <..Sensing..>    ");
+   outtextxy(375,269,"Then you prefer,");
+   outtextxy(455,295,"        N        ");
+   outtextxy(395,315,"    <..Intution..>   ");
+   outtextxy(245,360," ENTER THE LETTER: ");
+   gotoxy(55,24);
+   cin>>ch;
+    if(tolower(ch)=='s'|| tolower(ch)=='n')
+   break;
+   else
+   outtextxy(245,380,"WRONG OPTION! CHOOSE AGAIN(S/N)");
+   }while(tolower(ch)!='s'|| tolower(ch)!='n');
+   if(isupper(ch))
+      ch=tolower(ch);
+   m[va++]=ch;
+ }
+ void quiz::q3()
+ { do
+  {
+   cleardevice();
+   setcolor(15);
+   setbkcolor(4);
+   rectangle(10,10,maxx-10,maxy-10);
+   settextstyle(4,0,4) ;
+   outtextxy(2,10,"      ~ CAREER ASSESSMENT ~");
+   settextstyle(1,0,3);
+   outtextxy(40,80,"  # QUESTION 3");
+   settextstyle(3,0,2);
+   outtextxy(89,120,"  HOW DO YOU PREFER TO MAKE DECISIONS ?");
+   settextstyle(3,0,1);
+   outtextxy(65,165,"* Make decisions using logical ");
+   outtextxy(65,182,"  reasoning");
+   outtextxy(65,209,"* Value justice and fairness  ");
+   outtextxy(65,229," and find  flaws in an argument ");
+   outtextxy(375,165,"* Base decisions on how");
+   outtextxy(375,182,"  your actions affect others");
+   outtextxy(375,209,"* Value harmony and   ");
+   outtextxy(375,229,"  forgiveness,please others ");
+   outtextxy(68,269," Then you prefer, ");
+   outtextxy(117,295," T");
+   outtextxy(80,315,"<..Thinking..>");
+   outtextxy(375,269," Then you prefer, ");
+   outtextxy(455,295," F");
+   outtextxy(395,315,"<..Feeling..>");
+   outtextxy(245,360,"ENTER YOUR CHOICE: ");
+   gotoxy(55,24);
+   cin>>ch;
+    if(tolower(ch)=='t'|| tolower(ch)=='f')
+   break;
+   else
+   outtextxy(245,380,"WRONG OPTION! CHOOSE AGAIN(T/F)");
+   }while(tolower(ch)!='t'|| tolower(ch)!='f');
+   if(isupper(ch))
+      ch=tolower(ch);
+   m[va++]=ch;
+ }
+void quiz::q4()
+ { do
+  {
+   cleardevice();
+   setcolor(15);
+   setbkcolor(4);
+   rectangle( 10,10,maxx-10,maxy-10);
+   settextstyle(4,0,4);
+   outtextxy(2,10,"      ~ CAREER ASSESSMENT ~ ");
+   settextstyle(1,0,3);
+   outtextxy(40,80," # QUESTION 4");
+   settextstyle(3,0,2);
+   outtextxy(89,120," HOW DO YOU PREFER TO LIVE YOUR OUTER LIFE?");
+   settextstyle(3,0,1);
+   outtextxy(65,165," * Prefer to have matters");
+   outtextxy(65,182,"   settled");
+   outtextxy(65,209," * Prefer to leave your");
+   outtextxy(65,229,"	options open");
+   outtextxy(375,165," * Think rules & deadlines");
+   outtextxy(375,182,"   should be respected");
+   outtextxy(375,209,"* See rules & deadlines");
+   outtextxy(375,229," flexible");
+   outtextxy(68,269,"  Then you prefer,");
+   outtextxy(117,295,"        J");
+   outtextxy(80,315,"   <..Judging..>");
+   outtextxy(375,269,"	Then you prefer,");
+   outtextxy(455,295,"		   P        ");
+   outtextxy(395,315,"	 <..Perceiving..>   ");
+   outtextxy(245,365," ENTER THE LETTER: ");
+   gotoxy(55,24);
+   cin>>ch;
+    if(tolower(ch)=='j'|| tolower(ch)=='p')
+   break;
+   else
+   outtextxy(245,370,"WRONG OPTION! CHOOSE AGAIN(J/P)");
+   }while(tolower(ch)!='j'|| tolower(ch)!='p');
+   if(isupper(ch))
+      ch=tolower(ch);
+   m[va++]=ch;
+   m[va]='\0';
+ }
+
+
+  void quiz::pro1()
+{ ofstream f1("cas1.txt");
+  f1<<"\n\n\n\n\n\n\n\n\n\n\t You are a responsible,realistic and systematic person \n";
+  f1<<"\n\t<3 Your heart says the profession ~ WEB DEVELOPER ~. \n";
+  f1<<"\n\t# Your mind says the profession ~ AUDITOR ~. \n";
+  f1<<"\n\t                                 WEB DEVELOPER     AUDITOR \n";
+  f1<<"\n\t* BEST UNIVERSITY(WORLD) :  ST FRANCIS      HARVARD \n";
+  f1<<"\n\t* BEST UNIVERSITY(INDIA) : ADMEC Multimedia   FGC-Firoz \n";
+  f1<<"\n                                  Institute         Gandhi college \n";
+  f1<<"\n\t* AVG SALARY ABROAD      : $61,868            $53,323 \n";
+  f1<<"\n\t* AVG SALARY IN INDIA    : 20 - 35 lakhs(INR)          \n";
+  f1.close();
+}
+void quiz::pro2()
+{ ofstream f2("cas2.txt");
+  f2<<"\n\n\n\n\n\n\n\n\n\t You are a considerate,gentle and pragmatic person.\n";
+  f2<<"\n\t<3 Your heart says the profession ~ TEACHER ~.\n";
+  f2<<"\n\t# Your mind says the profession ~ DENTIST ~.\n";
+  f2<<"\n\t                                TEACHER      DENTIST      \n";
+  f2<<"\n\t* BEST UNIVERSITY(WORLD): Stanford     University of \n";
+  f2<<"\n                               University    California \n";
+  f2<<"\n\t* BEST UNIVERSITY(INDIA):   Manipal uni     SRM COLLEGE\n";
+  f2<<"\n\t* AVG SALARY ABROAD     : $58,000      $1,46,000\n";
+  f2<<"\n\t* AVG SALARY IN INDIA   : 15 - 18 lacs(INR)           \n";
+  f2.close();
+}
+void quiz::pro3()
+{ ofstream f3("cas3.txt");
+  f3<<"\n\n\n\n\n\n\n\n\n\t You are an idealistic,organized,gentle and insightful person. \n";
+  f3<<"\n\t<3 Your heart says the profession ~ THERAPIST ~. \n";
+  f3<<"\n\t # Your mind says the profession ~ SOCIAL WORKER ~.\n";
+  f3<<"\n\t                               THERAPIST   SOCIAL WORKER \n";
+  f3<<"\n\t* BEST UNIVERSITY(WORLD):Stanford    University of \n";
+  f3<<"\n                              University     Michigan \n";
+  f3<<"\n\t* BEST UNIVERSITY(INDIA): Amity        SRCC    \n";
+  f3<<"\n\t* AVG SALARY ABROAD     :$81,330      $45,000  \n";
+  f3<<"\n\t* AVG SALARY IN INDIA   :30 -42 lacs(INR)       \n";
+  f3.close();
+}
+void quiz::pro4()
+{ ofstream f4("cas4.txt");
+  f4<<"\n\n\n\n\n\n\n\n\n\t You are a logical,innovative and strategic person. \n";
+  f4<<"\n\t<3 Your heart says the profession ~ SOFTWARE DEVELOPER ~. \n";
+  f4<<"\n\t # Your mind says the profession ~ FINANCIAL ADVISER ~. \n";
+  f4<<"\n\t                               SOFTWARE    FINANCIAL \n";
+  f4<<"\n\t                               DESIGNER    ADVISOR \n";
+  f4<<"\n\t* BEST UNIVERSITY(WORLD): MIT        NYU \n";
+  f4<<"\n\t* BEST UNIVERSITY(INDIA):RV College  SRCC \n";
+  f4<<"\n\t* AVG SALARY ABROAD     :$80,000    $ 95,0000 \n";
+  f4<<"\n\t* AVG SALARY IN INDIA   : 60-75 lacs(INR)     \n";
+  f4.close();
+}
+void quiz::pro5()
+{ ofstream f5("cas5.txt");
+  f5<<"\n\n\n\n\n\n\n\n\n\t You are a action-oriented,spontaneous and analytical person. \n";
+  f5<<"\n\t<3 Your heart says the profession ~ CIVIL ENGINEER ~. \n";
+  f5<<"\n\t # Your mind says the profession ~ PHYSICIAN ~. \n";
+  f5<<"\n\t                                CIVIL   \n";
+  f5<<"\n\t                                ENGINEER      PHYSICIAN  \n";
+  f5<<"\n\t* BEST UNIVERSITY(WORLD):University     Harvard \n";
+  f5<<"\n                               of California  University \n";
+  f5<<"\n\t* BEST UNIVERSITY(INDIA):BIT MESRA      AIIMS   \n";
+  f5<<"\n\t* AVG SALARY ABROAD     :$33,540        $40,000 \n";
+  f5<<"\n\t* AVG SALARY IN INDIA   : 50-75 lacs(INR)        \n";
+  f5.close();
+}
+void quiz::pro6()
+{ ofstream f6("cas6.txt");
+  f6<<"\n\n\n\n\n\n\n\n\n\t You are a sensitive,nurturing and flexible person. \n";
+  f6<<"\n\t<3 Your heart says the profession ~ ARCHITECT ~. \n";
+  f6<<"\n\t # Your mind says the profession ~ FASHION DESIGNER ~. \n";
+  f6<<"\n\t                               ARCHITECT  DESIGNER \n";
+  f6<<"\n\t* BEST UNIVERSITY(WORLD):MIT       Central Saint \n";
+  f6<<"\n                                           Martins \n";
+  f6<<"\n\t* BEST UNIVERSITY(INDIA):School of    Pearl Academy \n";
+  f6<<"\n\t                               Architecture     \n";
+  f6<<"\n\t* AVG SALARY ABROAD     :$28,680      $49,000 \n";
+  f6<<"\n\t* AVG SALARY IN INDIA   : 10-15 lacs(INR)     \n";
+  f6.close();
+}
+void quiz::pro7()
+{ ofstream f7("cas7.txt");
+  f7<<"\n\n\n\n\n\n\n\n\n\t You are a caring,loyal and creative person. \n";
+  f7<<"\n\t<3 Your heart says the profession ~ WRITER ~. \n";
+  f7<<"\n\t # Your mind says the profession ~ GRAPHIC DESIGNER ~. \n";
+  f7<<"\n\t                                          GRAPHIC \n";
+  f7<<"\n\t                               WRITER     DEISGNER \n";
+  f7<<"\n\t* BEST UNIVERSITY(WORLD):NYU         MIT \n";
+  f7<<"\n\t* BEST UNIVERSITY(INDIA):AP College  NIFT  \n";
+  f7<<"\n\t* AVG SALARY ABROAD     :$62,000     $56,000 \n";
+  f7<<"\n\t* AVG SALARY IN INDIA   : 55-80  lacs (INR)    \n";
+  f7.close();
+}
+void quiz::pro8()
+{ ofstream f8("cas8.txt");
+  f8<<"\n\n\n\n\n\n\n\n\n\t You are a precise,intellectual and logical person. \n";
+  f8<<"\n\t<3 Your heart says the profession ~ ARCHITECT ~. \n";
+  f8<<"\n\t Your mind says the profession  ~ SOFTWARE DESIGNER ~. \n";
+  f8<<"\n\t                                            SOFTWARE \n";
+  f8<<"\n\t                               ARCHITECT    DESIGNER \n";
+  f8<<"\n\t* BEST UNIVERSITY(WORLD):   MIT          MIT \n";
+  f8<<"\n\t* BEST UNIVERSITY(INDIA):School of        RV \n";
+  f8<<"\n\t                        Architecture college \n";
+  f8<<"\n\t* AVG SALARY ABROAD     :$88,680      $110,000 \n";
+  f8<<"\n\t* AVG SALARY IN INDIA   : 40 lacs(INR)   80 lacs(INR) \n";
+  f8.close();
+}
+void quiz::pro9()
+{ ofstream f9("cas9.txt");
+  f9<<"\n\n\n\n\n\n\n\t You are an outgoing person with skillful negotiation . \n";
+  f9<<"\n<3 Your heart says the profession ~ FINANCIAL ADVISER ~.\n";
+  f9<<"\n\t# Your mind says the profession ~ INVESTOR ~. \n";
+  f9<<"\n\t                                 FINANCIAL         INVESTOR \n";
+  f9<<"\n                                 ADVISER                   \n";
+  f9<<"\n* BEST UNIVERSITY(WORLD):  NYU STERN    UCLA ANDERSON    \n";
+  f9<<"\n* BEST UNIVERSITY(INDIA): S.P JAIN      GANDHI INSTITUTE \n";
+  f9<<"\n* AVG SALARY ABROAD     : $81,238            $98,200 \n";
+  f9<<"\n\t* AVG SALARY IN INDIA : 25 lacs(INR)         53 lacs(INR)   \n";
+  f9.close();
+}
+ void quiz::pro10()
+{ ofstream f10("cas10.txt");
+  f10<<"\n\n\n\n\n\n\n\n\n\n\n\t You are an enthusiastic,tactful and flexible person.\n";
+  f10<<"\n<3 Your heart says the profession ~ PHYSICIAN ~. \n";
+  f10<<"\n# Your mind says the profession ~ INTERIOR DESIGNER ~. \n";
+  f10<<"\n                                 PHYSICIAN         INTERIOR  \n";
+  f10<<"\n                                                     DESIGNER \n";
+  f10<<"\n* BEST UNIVERSITY(WORLD):  PRATT         MONTANA STATE \n";
+  f10<<"\n* BEST UNIVERSITY(INDIA): INDIAN INSTITUTE    TIOS \n" ;
+  f10<<"\n* AVG SALARY ABROAD     : $41,168            $48,023 \n";
+  f10<<"\n* AVG SALARY IN INDIA   : 55 lacs(INR)        69 lacs(INR)    \n";
+  f10.close();
+}
+void quiz::pro11()
+{ ofstream f11("cas11.txt");
+  f11<<"\n\n\n\n\n\n\n\n\n\t You are a creative,enthusiastic and an optimistic person. \n";
+  f11<<"\n\t<3 Your heart says the profession ~ ADVERTISING DIRECTOR ~.\n";
+  f11<<"\n\t# Your mind says the profession ~ CONSULTANT ~. \n";
+  f11<<"\n\t                                 ADVERTISING       CONSULTANT \n";
+  f11<<"\n\t                                  DIRECTOR                   \n";
+  f11<<"\n\t* BEST UNIVERSITY(WORLD): GRADY COLLEGE     DUOM \n";
+  f11<<"\n\t* BEST UNIVERSITY(INDIA): SYMBIOSIS      IIOMC \n";
+  f11<<"\n\t* AVG SALARY ABROAD      : $51,000            $53,000 \n";
+  f11<<"\n\t* AVG SALARY IN INDIA    : 20 lacs(INR)       25 lacs(INR)        \n";
+  f11.close();
+
+}
+void quiz::pro12()
+{ ofstream f12("cas12.txt");
+  f12<<"\n\n\n\n\n\n\n\n\n\tYou are an enterprising,inquistive and versatie person.\n";
+  f12<<"\n\t<3 Your heart says the profession ~ ENTREPRENEUR ~. \n";
+  f12<<"\n\t# Your mind says the profession ~ REAL ESTATE DEVELOPER ~. \n";
+  f12<<"\n\t                              ENTREPRENEUR     REAL ESTATE  \n";
+  f12<<"\n\t                                                     DEVELOPER \n";
+  f12<<"\n\t* BEST UNIVERSITY(WORLD):  BAPSON              SYMBIOSIS \n";
+  f12<<"\n\t* BEST UNIVERSITY(INDIA): BVDU INSTITUTE       AMITY \n";
+  f12<<"\n\t* AVG SALARY ABROAD     : $30,218            $59,450 \n";
+  f12<<"\n\t* AVG SALARY IN INDIA   : 39 lacs(INR)       55 lacs(INR)        \n";
+  f12.close();
+
+}
+void quiz::pro13()
+{ ofstream f13("cas13.txt");
+  f13<<"\n\n\n\n\n\n\n\n\n\t You are logical,independent and action oriented person. \n";
+  f13<<"\n\t<3 Your heart says the profession ~ INSURANCE AGENT ~. \n";
+  f13<<"\n\t# Your mind says the profession ~ PHARMACIST ~. \n";
+  f13<<"\n\t                                 INSURANCE        PHARMACIST \n";
+  f13<<"\n\t                                   AGENT                   \n";
+  f13<<"\n\t* BEST UNIVERSITY(WORLD):  University of     University of \n";
+  f13<<"\n                              NORTH CAROLINA     Minnesota \n";
+  f13<<"\n\t* BEST UNIVERSITY(INDIA):RAMACHANDRA           NALSAR \n";
+  f13<<"\n\t* AVG SALARY ABROAD     : $65,068            $80,323 \n";
+  f13<<"\n\t* AVG SALARY IN INDIA   : 45 lacs(INR)       63 lacs(INR)        \n";
+  f13.close();
+}
+void quiz::pro14()
+{ ofstream f14("cas14.txt");
+  f14<<"\n\n\n\n\n\n\n\n\n\t You are a nurturing,gentle,realstic person. \n";
+  f14<<"\n\t<3 Your heart says the profession ~ NURSE  ~. \n";
+  f14<<"\n\t# Your mind says the profession ~ PR ACCOUNT EXECUTIVE ~. \n";
+  f14<<"\n\t                                       NURSE      PR \n";
+  f14<<"                                                    EXECUTIVE   \n";
+  f14<<"\n\t* BEST UNIVERSITY(WORLD):  Bostons Downtown     Endicott \n";
+  f14<<"\n\t* BEST UNIVERSITY(INDIA): Xaviers institute      IIMC,Delhi \n";
+  f14<<"\n\t* AVG SALARY ABROAD    : $91,000                $62,123 \n";
+  f14<<"\n\t* AVG SALARY IN INDIA  : 60 lacs(INR)            75 lacs(INR)       \n";
+  f14.close();
+}
+void quiz::pro15()
+{ ofstream f15("cas15.txt");
+  f15<<"\n\n\n\n\n\n\n\n\n\t You are a creative,perceptive and an idealistic person. \n";
+  f15<<"\n\t<3 Your heart says the profession ~ PR SPECIALIST ~.\n";
+  f15<<"\n\t# Your mind says the profession ~ SALES MANAGER ~. \n";
+  f15<<"\n\t                                 PR SPECIALIST     SALES \n";
+  f15<<"\n\t                                                    MANAGER \n";
+  f15<<"\n\t* BEST UNIVERSITY(WORLD):   Stanford         Montana State \n";
+  f15<<"\n\t* BEST UNIVERSITY(INDIA):  IIM,Ranchi       Tata Inst. of  \n";
+  f15<<"\n\t* AVG SALARY ABROAD     : $51,000                 $55,323 \n";
+  f15<<"\n\t* AVG SALARY IN INDIA   : 40 lacs(INR)           70 lakhs(INR)         \n";
+  f15.close();
+
+}
+void quiz::pro16()
+{ ofstream f16("cas16.txt");
+  f16<<"\n\n\n\n\n\n\n\n\n\tYou are a intellectual,logical,precise and systematic person. \n";
+  f16<<"\n\t<3 Your heart says the profession ~ MARKET RESEARCH ANALYST ~. \n";
+  f16<<"\n\t# Your mind says the profession ~ BUSINESS CONSULTANT ~. \n";
+  f16<<"\n\t                               MARKET RESEARCH   BUSINESS \n";
+  f16<<"\n\t                                 ANALYST          CONSULTANT \n";
+  f16<<"\n\t* BEST UNIVERSITY(WORLD):  Herott-Watt        Montana State \n";
+  f16<<"\n\t* BEST UNIVERSITY(INDIA):   S-CME              AL-Falaah \n";
+  f16<<"\n\t* AVG SALARY ABROAD     : $81,868                   $93,323 \n";
+  f16<<"\n\t* AVG SALARY IN INDIA   : 40lakhs(INR)               50 lakhs(INR)         \n";
+  f16.close();
+}
+void quiz::check()
+{ char n[16][5]={"istj","isfj","infj","intj","istp","isfp","infp","intp","estp","esfp","enfp","entp","estj","esfj","enfj","entj"} ;
+  char q[5];
+  int j,r;
+  char temp[70];
+  for(j=0;j<16;j++)
+    { r=j;
+      strcpy(q,n[j]);
+      if(strcmpi(m,q)==0)
+	{ switch(r)
+	    {  case 0:cleardevice();
+		      setbkcolor(12);
+		      setcolor(8);
+		      settextstyle(4,0,4);
+		      outtextxy(95,400," ~ CAREER ASSESSMENT ~ ");                        
+                      setcolor(15);
+		      ifstream w("cas1.txt");
+		      settextstyle(7,0,1);
+		      while(w.getline(temp,70))
+			 {  outtextxy(15,400,temp);
+			   cout<<endl;
+			 }
+		      getch();
+		      w.close();
+		      cleardevice();
+		      setbkcolor(4);
+		      setcolor(15);
+		      gotoxy(2,14);
+		      rectangle(10,10,maxx-10,maxy-10);
+		      settextstyle(DEFAULT_FONT,0,5);
+		      outtextxy(145,220,"THANK YOU!");
+		      getch();
+		      exit(0);
+		      break;
+	     case 1:  cleardevice();
+		      setbkcolor(12);
+		      setcolor(8);
+		      settextstyle(4,0,4);
+		      outtextxy(95,400," ~ CAREER ASSESSMENT ~ ");
+		      setcolor(15);
+		      ifstream a("cas2.txt");
+		      settextstyle(7,0,1);
+		      while(a.getline(temp,70))
+			 { outtextxy(15,400,temp);
+			   cout<<endl;
+			}
+		      getch();
+		      a.close();
+		       cleardevice();
+		      setbkcolor(4);
+		      setcolor(15);
+		      gotoxy(2,14);
+		      rectangle(10,10,maxx-10,maxy-10);
+		      settextstyle(DEFAULT_FONT,0,5);
+		      outtextxy(145,220,"THANK YOU!");
+		      getch();
+		      exit(0);
+		      break;
+	       case 2:cleardevice();
+		      setbkcolor(12);
+		      setcolor(8);
+		      settextstyle(4,0,4);
+		      outtextxy(95,400," ~ CAREER ASSESSMENT ~ ");
+		      setcolor(15);
+		      ifstream b("cas3.txt");
+		      settextstyle(7,0,1);
+		      while(b.getline(temp,70))
+			 { outtextxy(15,400,temp);
+			   cout<<endl;
+			 }
+		      getch();
+		      b.close();
+		       cleardevice();
+		      setbkcolor(4);
+		      setcolor(15);
+		      gotoxy(2,14);
+		      rectangle(10,10,maxx-10,maxy-10);
+		      settextstyle(DEFAULT_FONT,0,5);
+		      outtextxy(145,220,"THANK YOU!");
+		      getch();
+		      exit(0);
+		      break;
+	       case 3:cleardevice();
+		      setbkcolor(12);
+		      setcolor(8);
+		      settextstyle(4,0,4);
+		      outtextxy(95,400," ~ CAREER ASSESSMENT ~ ");
+		      setcolor(15);
+		      ifstream c("cas4.txt");
+		      settextstyle(7,0,1);
+		      while(c.getline(temp,70))
+			 { outtextxy(15,400,temp);
+			   cout<<endl;
+			  }
+		      getch();
+		      c.close();
+		      cleardevice();
+		      setbkcolor(4);
+		      setcolor(15);
+		      gotoxy(2,14);
+		      rectangle(10,10,maxx-10,maxy-10);
+		      settextstyle(DEFAULT_FONT,0,5);
+		      outtextxy(145,220,"THANK YOU!");
+		      getch();
+		      exit(0);
+		      break;
+
+	     case 4: cleardevice();
+		     setbkcolor(12);
+		     setcolor(8);
+		     settextstyle(4,0,4);
+		     outtextxy(95,400," ~ CAREER ASSESSMENT ~ ");
+		     setcolor(15);
+		     ifstream d("cas5.txt");
+		     settextstyle(7,0,1);
+		     while(d.getline(temp,70))
+		     { outtextxy(15,400,temp);
+		       cout<<endl;
+		     }
+		     getch();
+		     d.close();
+		     cleardevice();
+		     setbkcolor(4);
+		     setcolor(15);
+		     gotoxy(2,14);
+		     rectangle(10,10,maxx-10,maxy-10);
+		     settextstyle(DEFAULT_FONT,0,5);
+		     outtextxy(145,220,"THANK YOU!");
+		     getch();
+		     exit(0);
+		     break;
+
+	       case 5:cleardevice();
+		      setbkcolor(12);
+		      setcolor(8);
+		      settextstyle(4,0,4);
+		      outtextxy(95,400," ~ CAREER ASSESSMENT ~ ");
+		      setcolor(15);
+		      ifstream e("cas6.txt");
+		      settextstyle(7,0,1);
+		      while(e.getline(temp,70))
+			 { outtextxy(15,400,temp);
+			   cout<<endl;
+			 }
+		      getch();
+		      e.close();
+		      cleardevice();
+		      setbkcolor(4);
+		      setcolor(15);
+		      gotoxy(2,14);
+		      rectangle(10,10,maxx-10,maxy-10);
+		      settextstyle(DEFAULT_FONT,0,5);
+		      outtextxy(145,220,"THANK YOU!");
+		      getch();
+		      exit(0);
+		      break;
+
+	       case 6: cleardevice();
+		      setbkcolor(12);
+		      setcolor(8);
+		      settextstyle(4,0,4);
+		      outtextxy(95,400," ~ CAREER ASSESSMENT ~ ");
+		      setcolor(15);
+		      ifstream f("cas7.txt");
+		      settextstyle(7,0,1);
+		      while(f.getline(temp,70))
+			 { outtextxy(15,400,temp);
+			   cout<<endl;
+			 }
+
+		      getch();
+		      f.close();
+		      cleardevice();
+		      setbkcolor(4);
+		      setcolor(15);
+		      gotoxy(2,14);
+		      rectangle(10,10,maxx-10,maxy-10);
+		      settextstyle(DEFAULT_FONT,0,5);
+		      outtextxy(145,220,"THANK YOU!");
+		      getch();
+		      exit(0);
+		      break;
+
+	       case 7:cleardevice();
+		      setbkcolor(12);
+		      setcolor(8);
+		      settextstyle(4,0,4);
+		      outtextxy(95,400," ~ CAREER ASSESSMENT ~ ");
+		      setcolor(15);
+		      ifstream g("cas8.txt");
+		      settextstyle(7,0,1);
+		      while(g.getline(temp,70))
+			 { outtextxy(15,400,temp);
+			   cout<<endl;
+			 }
+		      getch();
+		      g.close();
+		      cleardevice();
+		      setbkcolor(4);
+		      setcolor(15);
+		      gotoxy(2,14);
+		      rectangle(10,10,maxx-10,maxy-10);
+		      settextstyle(DEFAULT_FONT,0,5);
+		      outtextxy(145,220,"THANK YOU!");
+		      getch();
+		      exit(0);
+		      break;
+
+	       case 8:cleardevice();
+		      setbkcolor(12);
+		      setcolor(8);
+		      settextstyle(4,0,4);
+		      outtextxy(95,350," ~ CAREER ASSESSMENT ~ ");
+		      setcolor(15);
+		      ifstream h("cas9.txt");
+		      settextstyle(7,0,1);
+		      while(h.getline(temp,70))
+			 { outtextxy(15,400,temp);
+			   cout<<endl;
+			  }
+		      getch();
+		      h.close();
+		      cleardevice();
+		      setbkcolor(4);
+		      setcolor(15);
+		      gotoxy(2,14);
+		      rectangle(10,10,maxx-10,maxy-10);
+		      settextstyle(DEFAULT_FONT,0,5);
+		      outtextxy(145,220,"THANK YOU!");
+		      getch();
+		      exit(0);
+		      break;
+
+	       case 9:cleardevice();
+		      setbkcolor(12);
+		      setcolor(8);
+		      settextstyle(4,0,4);
+		      outtextxy(95,440," ~ CAREER ASSESSMENT ~ ");
+		      setcolor(15);
+		      ifstream p("cas10.txt");
+		      settextstyle(7,0,1);
+		      while(p.getline(temp,70))
+			 { outtextxy(15,400,temp);
+			   cout<<endl;
+			   }
+		      getch();
+		      p.close();
+		      cleardevice();
+		      setbkcolor(4);
+		      setcolor(15);
+		      gotoxy(2,14);
+		      rectangle(10,10,maxx-10,maxy-10);
+		      settextstyle(DEFAULT_FONT,0,5);
+		      outtextxy(145,220,"THANK YOU!");
+		      getch();
+		      exit(0);
+		      break;
+	       case 10:cleardevice();
+		      setbkcolor(12);
+		      setcolor(8);
+		      settextstyle(4,0,4);
+		      outtextxy(95,400," ~ CAREER ASSESSMENT ~ ");
+		      setcolor(15);
+		      ifstream aj("cas11.txt");
+		      settextstyle(7,0,1);
+		      while(aj.getline(temp,70))
+			 { outtextxy(15,400,temp);
+			   cout<<endl;
+			 }
+		      getch();
+		      aj.close();
+		      cleardevice();
+		      setbkcolor(4);
+		      setcolor(15);
+		      gotoxy(2,14);
+		      rectangle(10,10,maxx-10,maxy-10);
+		      settextstyle(DEFAULT_FONT,0,5);
+		      outtextxy(145,220,"THANK YOU!");
+		      getch();
+		      exit(0);
+		      break;
+	       case 11:cleardevice();
+		      setbkcolor(12);
+		      setcolor(8);
+		      settextstyle(4,0,4);
+		      outtextxy(95,400," ~ CAREER ASSESSMENT ~ ");
+		      setcolor(15);
+		      ifstream q("cas12.txt");
+		      settextstyle(7,0,1);
+		      while(q.getline(temp,70))
+			 { outtextxy(15,400,temp);
+			   cout<<endl;
+			  }
+		      getch();
+		      q.close();
+		      cleardevice();
+		      setbkcolor(4);
+		      setcolor(15);
+		      gotoxy(2,14);
+		      rectangle(10,10,maxx-10,maxy-10);
+		      settextstyle(DEFAULT_FONT,0,5);
+		      outtextxy(145,220,"THANK YOU!");
+		      getch();
+		      exit(0);
+		      break;
+	       case 12:cleardevice();
+		      setbkcolor(12);
+		      setcolor(8);
+		      settextstyle(4,0,4);
+		      outtextxy(95,400," ~ CAREER ASSESSMENT ~ ");
+		      setcolor(15);
+		      ifstream r("cas13.txt");
+		      settextstyle(7,0,1);
+		      while(r.getline(temp,70))
+			 { outtextxy(15,400,temp);
+			   cout<<endl;
+			 }
+		      getch();
+		      r.close();
+		      cleardevice();
+		      setbkcolor(4);
+		      setcolor(15);
+		      gotoxy(2,14);
+		      rectangle(10,10,maxx-10,maxy-10);
+		      settextstyle(DEFAULT_FONT,0,5);
+		      outtextxy(145,220,"THANK YOU!");
+		      getch();
+		      exit(0);
+		      break;
+	       case 13:cleardevice();
+		      setbkcolor(12);
+		      setcolor(8);
+		      settextstyle(4,0,4);
+		      outtextxy(95,400," ~ CAREER ASSESSMENT ~ ");
+		      setcolor(15);
+		      ifstream dd("cas14.txt");
+		      settextstyle(7,0,1);
+		      while(dd.getline(temp,70))
+			 { outtextxy(15,400,temp);
+			   cout<<endl;
+			   }
+		      getch();
+		      dd.close();
+		      cleardevice();
+		      setbkcolor(4);
+		      setcolor(15);
+		      gotoxy(2,14);
+		      rectangle(10,10,maxx-10,maxy-10);
+		      settextstyle(DEFAULT_FONT,0,5);
+		      outtextxy(145,220,"THANK YOU!");
+		      getch();
+		      exit(0);
+		      break;
+
+	       case 14:	cleardevice();
+		      setbkcolor(12);
+		      setcolor(8);
+		      settextstyle(4,0,4);
+		      outtextxy(95,400," ~ CAREER ASSESSMENT ~ ");
+		      setcolor(15);
+		      ifstream y("cas15.txt");
+		      settextstyle(7,0,1);
+		      while(y.getline(temp,70))
+			 { outtextxy(15,400,temp);
+			   cout<<endl;
+
+			 }
+		      getch();
+		      y.close();
+		      cleardevice();
+		      setbkcolor(4);
+		      setcolor(15);
+		      gotoxy(2,14);
+		      rectangle(10,10,maxx-10,maxy-10);
+		      settextstyle(DEFAULT_FONT,0,5);
+		      outtextxy(145,220,"THANK YOU!");
+		      getch();
+		      exit(0);
+		      break;
+
+	       case 15:cleardevice();
+		      setbkcolor(12);
+		      setcolor(8);
+		      settextstyle(4,0,4);
+		      outtextxy(95,400," ~ CAREER ASSESSMENT ~ ");
+		      setcolor(15);
+		      ifstream l("cas16.txt");
+		      settextstyle(7,0,1);
+		      while(l.getline(temp,70))
+			 { outtextxy(15,400,temp);
+			   cout<<endl;
+			}
+		      getch();
+		      l.close();
+		      cleardevice();
+		      setbkcolor(4);
+		      setcolor(15);
+		      gotoxy(2,14);
+		      rectangle(10,10,maxx-10,maxy-10);
+		      settextstyle(DEFAULT_FONT,0,5);
+		      break;
+		      outtextxy(145,220,"THANK YOU!");
+		      getch();
+		      exit(0);
+
+	    	}
+
+   }
+       getch();
+ }	
+	    }
+
+
