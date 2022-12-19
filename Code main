@@ -1,0 +1,148 @@
+#include<string.h>
+#include<stdio.h>
+#include<ctype.h>
+#include<fstream.h>
+#include<iostream.h>
+#include<graphics.h>
+#include<stdlib.h>
+#include<dos.h>
+#include<process.h>
+#include<conio.h>
+#define maxx getmaxx()	
+#define maxy getmaxy()
+static int va=0;
+class quiz
+{ char ch;
+  char m[5];
+  public: 
+  void q3();
+  void q4();
+  void check();
+  void pro1();
+  void pro2();
+  void pro3();
+
+  void q1();
+  void q2();
+  void pro4();	
+  void pro5();
+  void pro6();
+  void pro7();
+  void pro8();
+  void pro9();
+  void pro10();
+  void pro11();
+  void pro12();
+  void pro13();
+  void pro14();
+  void pro15();
+  void pro16();
+}s;
+void main()
+{
+ int gd=DETECT,gm;	
+    s.pro1();
+    s.pro2();
+    s.pro3();
+    s.pro4();
+    s.pro5();
+    s.pro6();
+    s.pro7();
+    s.pro8();
+    s.pro9();
+    s.pro10();
+    s.pro11();
+    s.pro12();
+    s.pro13();
+    s.pro14();
+    s.pro15();
+    s.pro16();
+  float radius=1.7;int k=0;
+  initgraph(&gd,&gm,"c://turboc3//bgi//");
+  cleardevice();
+  setbkcolor(12);
+  while(k<=75)
+  {
+    arc(0,0,270,360,radius);
+    arc(getmaxx(),0,180,270,radius);
+    setcolor(8);
+    arc(0,getmaxy(),0,90,radius);
+    arc(getmaxx(),getmaxy(),90,180,radius);
+    radius+=2.3;
+    delay(50);
+    k++;
+  }
+  settextstyle(7,0,4);
+  setcolor(15);
+  outtextxy(230,85," WELCOME ");
+  outtextxy(287,130," TO");
+  settextstyle(4,0,5);
+  outtextxy(10,170," ~ CAREER ASSESSMENT ~ ");
+  settextstyle(7,0,4);
+  outtextxy(291,233,"BY");
+  settextstyle(4,0,5);
+  outtextxy(149,267," G Lakshmi Vadhanie ");
+  settextstyle(7,0,4);
+  outtextxy(275,323," &");
+  settextstyle(4,0,5);
+  outtextxy(196,359," A.C.Shwetha");
+  delay(1500);
+  cleardevice();
+  setbkcolor(12);
+  setcolor(8 );
+  settextstyle(4,0,4);
+  outtextxy(85,10," ~ CAREER ASSESSMENT ~ ");
+  setcolor(WHITE);
+  settextstyle(5,HORIZ_DIR,2);
+  outtextxy(33,50," :- Ever wondered what career could be    just right for you?");
+  outtextxy(38,70,"    Take this quiz and find out which one is ;) ");
+  outtextxy(43,90,":- This free career aptitude test is quite easy to take and ");
+  outtextxy(48,110,"    no registeration is required.");
+  setfillstyle(7,8);
+  bar(75,195,620,430);
+  settextstyle(1,0,1);
+  outtextxy(70,150," -> SOME INFORMATION ABOUT THE QUIZ <-");
+  settextstyle(6,0,2);
+  outtextxy(75,205," TIME TO COMPLETE   : 3 mins");
+  outtextxy(75,235," HOW MANY QUESTIONS ? : 4");
+  outtextxy(75,265," TIME LIMIT         : none");
+  outtextxy(75,295," RESULTS PRODUCED   : instant");
+  outtextxy(75,325," WHAT THE TEST DOES : cross reference your ");
+  outtextxy(284,345," answers with our career database");
+  outtextxy(284,365," and provide you with a career");
+  outtextxy(284,385," category and an explanation");
+  delay(20600);
+  getch();
+  cleardevice();
+  setbkcolor(8);
+  setcolor(15);
+  for(int i=0;i<500;i+=5)
+       { line(20,380,580,380);
+	 if(i%2==0)
+	   {  line(25+i,380,35+i,340);//left leg
+	      line(45+i,380,35+i,340);//right leg
+	      line(35+i,320,25+i,330);//left hand
+	      delay(50);
+	   }
+	 else
+	   {  line(35+i,380,35+i,340);
+	      line(35+i,310,40+i,330);
+	      delay(50);
+	   }
+	 line(35+i,340,35+i,310);//body
+	 circle(35+i,300,10);//head
+	 line(35+i,310,50+i,330);//hand
+	 line(50+i,330,50+i,280);//umbrella stick
+	 line(15+i,280,85+i,280);//umbrella right
+	 arc(50+i,280,0,180,35);//umbrella body
+	 arc(55+i,330,180,360,5);//umbrella handle
+	 int x=getmaxx();
+	 int y=getmaxy();
+	 for(int j=50;j<100;j++)
+	    {
+	       outtextxy(random(x),random(y-100)," * ");
+	       setcolor(15);
+	    }
+       delay(1100);
+       cleardevice();
+     }
