@@ -1,0 +1,116 @@
+GLOBAL STATIC VARIABLE  :  static int va 
+CLASS DEFINITION 
+CLASS  NAME                   :   QUIZ
+DATA  MEMBERS            :  char ch
+                                              char m[5]
+MEMBER FUNCTIONS    :
+ PUBLIC:
+  void q1()
+Prints the question
+Accepts user’s choice
+Stores it in class variable m(array)
+  void q2()
+ Prints the question
+Accepts user’s choice
+Stores it in class variable m(array)
+
+  void q3()
+Prints the question
+Accepts user’s choice
+Stores it in class variable m(array)
+  void q4()
+Prints the question
+Accepts user’s choice
+Stores it in class variable m(array)
+Terminates the array
+  void check()
+A 2-D char array initialised with 16 combination of choices 
+Character by character checking for the choices stored in the 1-D array ‘m' with each of the 16 combination of the 2-D character array takes place.
+If the set of choices find its match, its respective file is opened and its information is displayed. 
+  void pro1()
+Text file is opened
+Personality of the user is printed depending upon the choices selected.
+ Two professions along with the best universities and average salaries are stored in the file.        
+  void pro2()
+Text file is opened
+Personality of the user is printed depending upon the choices selected.
+ Two professions along with the best universities and average salaries are stored in the file. 
+  void pro3()
+Text file is opened
+Personality of the user is printed depending upon the choices selected.
+ Two professions along with the best universities and average salaries are stored in a file. 
+  void pro4()
+Text file is opened
+Personality of the user is printed depending upon the choices selected.
+ Two professions along with the best universities and average salaries are stored in the file. 
+  void pro5()
+Text file is opened
+Personality of the user is printed depending upon the choices selected.
+ Two professions along with the best universities and average salaries are stored in the file. 
+  void pro6()
+Text file is opened
+Personality of the user is printed depending upon the choices selected.
+ Two professions along with the best universities and average salaries are stored in the file. 
+ void pro7()
+Text file is opened
+Personality of the user is printed depending upon the choices selected.
+ Two professions along with the best universities and average salaries are stored in the file. 
+  void pro8()
+Text file is opened
+Personality of the user is printed depending upon the choices selected.
+ Two professions along with the best universities and average salaries are stored in the file. 
+  
+void pro9()
+Text file is opened
+Personality of the user is printed depending upon the choices selected.
+ Two professions along with the best universities and average salaries are stored in the file. 
+ void pro10()
+Text file is opened
+Personality of the user is printed depending upon the choices selected.
+ Two professions along with the best universities and average salaries are stored in the file. 
+  void pro11()
+Text file is opened
+ Personality of the user is printed depending upon the choices selected.
+ Two professions along with the best universities and average salaries are stored in the file. 
+ void pro12()
+Text file is opened
+Personality of the user is printed depending upon the choices selected.
+ Two professions along with the best universities and average salaries are stored in the file. 
+  void pro13()
+Text file is opened
+Personality of the user is printed depending upon the choices selected.
+ Two professions along with the best universities and average salaries are stored in the file. 
+  
+void pro14()
+Text file is opened
+Personality of the user is printed depending upon the choices selected.
+ Two professions along with the best universities and average salaries are stored in the file. 
+  void pro15()
+Text file is opened
+Personality of the user is printed depending upon the choices selected.
+ Two professions along with the best universities and average salaries are stored in the file.
+  void pro16()
+Text file is opened
+Personality of the user is printed depending upon the choices selected.
+ Two professions along with the best universities and average salaries are stored in the file. 
+GLOBAL CLASS OBJECT  :  s
+void main()
+CALLS
+s.pro1() , s.pro2(),  s.pro3() , s.pro4() ,s.pro5(),         s.pro6(), s.pro7(), s.pro8(), s.pro9(), s.pro10(),     s.pro11(), s.pro12(), s.pro13(), s.pro14(), s.pro15(),    s.pro16()
+        s.q1(),  s.q2(),  s.q3(),  s.q4()
+    s.check()
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
